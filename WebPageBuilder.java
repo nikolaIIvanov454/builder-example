@@ -3,8 +3,8 @@ package Builder;
 public class WebPageBuilder {
     private WebPage currentWebPage;
 
-    public WebPageBuilder(){
-        this.currentWebPage = new WebPage("Calculator", "<nav></nav>", "<p>Sum of numbers 2 and 2 is 4</p>", "<footer></footer>");
+    public WebPage createWebPage(String title, String header, String content, String footer) {
+        return new WebPage(title, header, content, footer);
     }
 
     public void setCurrentWebPageTitle(String title) {
